@@ -1,7 +1,10 @@
 package main.java.com.parking.utils;
 
+import lombok.Getter;
+import lombok.Setter;
 import main.java.com.parking.pricing.CostConfiguration;
 
+@Getter
 public enum ParkingSpotType {
  TWO_WHEELER(CostConfiguration.getInstance().TWO_WHEELER_HOURLY_RATE,
          CostConfiguration.getInstance().TWO_WHEELER_DAILY_RATE,
