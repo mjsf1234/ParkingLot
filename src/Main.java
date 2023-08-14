@@ -13,5 +13,5 @@ public class Main {
         Vehicle bike1 = new Vehicle("Mp18-Ca00", VehicleType.TWO_WHEELER);
 //        System.out.println(bike1.getType()+ " ---"+ bike1.getVehicleNumber());
         twoWheelerSpot1.parkVehicle(bike1);
-        System.out.println( twoWheelerSpot1.s);
+        System.out.println( twoWheelerSpot1);
 }}
