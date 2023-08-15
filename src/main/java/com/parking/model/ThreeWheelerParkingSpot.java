@@ -1,22 +1,18 @@
 package main.java.com.parking.model;
 
-import lombok.Getter;
-import lombok.Setter;
 import main.java.com.parking.utils.ParkingSpotType;
 import main.java.com.parking.utils.VehicleType;
 
-@Setter
-@Getter
-public class TwoWheelerParkingSpot implements ParkingSpot{
+public class ThreeWheelerParkingSpot implements ParkingSpot{
     private String spotNumber;
-    private ParkingSpotType spotType = ParkingSpotType.TWO_WHEELER ;
+    private ParkingSpotType spotType = ParkingSpotType.THREE_WHEELER ;
     private boolean isOccupied =false;
     private Vehicle parkedVehicle;
 
     @Override
     public void parkVehicle(Vehicle vehicle) {
 
-        if (!isOccupied && vehicle.getType() == VehicleType.TWO_WHEELER){
+        if (!isOccupied && vehicle.getType() == VehicleType.THREE_WHEELER){
             System.out.println("system is parking the vehicle please wait");
             this.parkedVehicle = vehicle;
             this.isOccupied =true;
@@ -27,16 +23,9 @@ public class TwoWheelerParkingSpot implements ParkingSpot{
     }
     @Override
     public void vacate() {
-        if(isOccupied){
-            parkedVehicle =null;
-            isOccupied=false;
-            System.out.println("vehicle removed successFully!!");
-        }
-        else {
-            System.out.println("No vehicle present in spot");
-
-        }
-
+        parkedVehicle =null;
+        isOccupied=true;
+        System.out.println("vehicle removed successFully!!");
     }
     @Override
     public ParkingSpotType getParkingSpotType() {

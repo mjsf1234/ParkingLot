@@ -1,4 +1,4 @@
-package main.java.com.parking.pricing;
+package main.java.com.parking.Strategy;
 
 import main.java.com.parking.model.Ticket;
 

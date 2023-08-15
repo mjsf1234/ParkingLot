@@ -1,4 +1,4 @@
-package main.java.com.parking.pricing;
+package main.java.com.parking.Strategy;
 
 public class CostConfiguration {
     private static CostConfiguration instance;
@@ -10,7 +10,7 @@ public class CostConfiguration {
         return instance;
     }
 
-    public final double TWO_WHEELER_HOURLY_RATE = 3.0;
+    public final double TWO_WHEELER_HOURLY_RATE = 10.0;
     public final double TWO_WHEELER_DAILY_RATE = 15.0;
     public final double TWO_WHEELER_MONTHLY_RATE = 80.0;
     public final double THREE_WHEELER_HOURLY_RATE = 4.0;
